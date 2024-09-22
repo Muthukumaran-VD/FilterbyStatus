@@ -1,0 +1,115 @@
+/* Overall container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light sky blue background */
+    margin: 0;
+    padding: 20px;
+    color: #333; /* Darker color for text */
+  }
+  
+  /* Table container */
+  h2 {
+    color: #0066cc; /* Dark sky blue */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  th {
+    background-color: #0066cc; /* Sky blue for the header */
+    color: white;
+  }
+  
+  td {
+    background-color: #f9f9f9;
+  }
+  
+  /* Table row hover effect */
+  tr:hover {
+    background-color: #e6f7ff; /* Light blue hover effect */
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #0066cc; /* Sky blue */
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+  }
+  
+  /* Checkbox section */
+  label {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #0066cc; /* Sky blue for label text */
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Heading for status filter */
+  h3 {
+    color: #333;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    table, th, td {
+      display: block;
+      width: 100%;
+    }
+    
+    th {
+      display: none;
+    }
+  
+    td {
+      border: none;
+      padding: 10px 0;
+      position: relative;
+      padding-left: 50%;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+  }
+
+.head-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Vuedatalogo {
+    width: 250px;
+    height: 30px;
+    margin-top: 25px;
+  }
